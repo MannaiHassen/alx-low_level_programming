@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-* main - This main funtion puts a string 
+*main - Entry point of the program
+*return : 0 always
 */
 int main(void)
 {
