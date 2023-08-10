@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*Puts
+* main - This main funtion puts a string 
 */
 int main(void)
 {
