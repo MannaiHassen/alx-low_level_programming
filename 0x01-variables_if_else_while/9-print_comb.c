@@ -6,15 +6,18 @@
 */
 int main(void)
 {
-int n = 48;
+int n;
 
-while (n < 57)
+for (n = 48 ; n < 58 ; n++)
 {
 putchar(n);
+if (n == 57)
+{
+continue;
+}
 putchar(44);
 putchar(32);
-n++;
 }
-putchar(57);
+putchar('\n');
 return (0);
 }
