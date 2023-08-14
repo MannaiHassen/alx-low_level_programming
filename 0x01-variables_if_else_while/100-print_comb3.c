@@ -17,8 +17,10 @@ if (i == 56 && j ==57)
 {
 continue;
 }
-putchar(' ');
 putchar(',');
+if (i== 55 && j==57)
+	continue;
+putchar(' ');
 }}
 return (0);
 }
