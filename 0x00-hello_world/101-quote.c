@@ -1,4 +1,5 @@
-#include <unistd>
+#include <unistd.h>
+#include <string.h>
 /**
 * main - entry point of the program
 * Description : this program print an standard error with write
@@ -6,8 +7,8 @@
 */
 int main(void)
 {
-	char quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
-	write(2,quote + "\n", strlen(quote));
+	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2,quote, strlen(quote));
 	return (1);
 }
 
