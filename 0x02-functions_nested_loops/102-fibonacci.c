@@ -4,9 +4,9 @@
  * main - printing all firt 50 Fibonacci numbers
  * Return: always 0
  */
-long int main(void)
+int main(void)
 {
-long int n, first, second, next;
+long int first, second, next;
 int i;
 
 first = 1;
@@ -26,4 +26,5 @@ printf("%ld\n", next);
 first = second;
 second = next;
 }
+return (0);
 }
