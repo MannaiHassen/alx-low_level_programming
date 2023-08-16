@@ -1,40 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - printing all firt 50 Fibonacci numbers
+ * main - printing the sum of febunacci numbers less than 4000000
  * Return: always 0
  */
 int main(void)
 {
-	long int first, second, next, nextPlus;
-	int i;
+	long int sum, first, second, next;
 
+	sum = 0;
 	first = 1;
 	second = 2;
-	nextPlus = 3;
-	next = 3;
-	printf("%ld,  ", second);
-	for (i = 3; next <= 4000000; i++)
+	while (second <= 4000000)
 	{
 		next = first + second;
-		if (nextPlus <= 4000000)
+		if ((next % 2) == 0)
 		{
-			if ((next % 2) == 0)
-			{
-			printf("%ld, ", next);
-			}
+			sum = sum + next;
 		}
-		else
-		{
-			if ((next % 2) == 0)
-			{
-			printf("%ld\n", next);
-		}
-		first = second;
-		second = next;
-		nextPlus = next + second;
+	first = second;
+	second = next;
 	}
-}
+	printf("%ld\n", next);
+
 return (0);
 }
 
