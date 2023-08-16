@@ -21,7 +21,7 @@ int main(void)
 	first = second;
 	second = next;
 	}
-	printf("%ld\n", next);
+	printf("%ld\n", sum);
 
 return (0);
 }
