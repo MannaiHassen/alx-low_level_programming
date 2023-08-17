@@ -4,6 +4,7 @@
  * print_diagonal - print a diagonal line
  * @n: number of times the character \
  */
+
 void print_diagonal(int n)
 {
 	int i, j;
